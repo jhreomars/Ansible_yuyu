@@ -1,0 +1,12 @@
+---
+  - hosts: hostname
+    remote_user: root
+    tasks:
+      - name: copyfile
+        copy: 
+          src=/tmp/test.txt
+          dest=/root/test.txt
+      - name: testshell1
+        shell: 'touch test_2.txt'
+      - name: testshell2
+        shell: 'touch test_3.txt'

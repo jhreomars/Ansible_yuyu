@@ -1,0 +1,4 @@
+- name: install com
+  shell: sudo curl -L https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.17.0/docker-compose-Linux-x86_64 > /usr/local/bin/docker-compose
+- name: sudo chmod +x /usr/local/bin/docker-compose
+  shell: sudo chmod +x /usr/local/bin/docker-compose
