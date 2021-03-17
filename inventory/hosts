@@ -20,6 +20,9 @@
 [hostname]
 10.211.55.6
 
+[web_server]
+web1 ansible_ssh_port=22 ansible_ssh_host=10.211.55.6 ansible_user=root
+
 # Ex 2: A collection of hosts belonging to the 'webservers' group:
 
 ## [webservers]

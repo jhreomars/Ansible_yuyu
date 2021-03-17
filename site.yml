@@ -1,7 +1,8 @@
 --- 
-- hosts: "{{ host }}"
+- hosts: web1
   gather_facts: false
   remote_user: root
   roles:
     - { role: install_compose, tags: "compose"}
     - install_docker
+    - docker_jenkins
