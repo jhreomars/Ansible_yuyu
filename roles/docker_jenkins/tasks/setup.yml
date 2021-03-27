@@ -1,13 +1,13 @@
 ---
-- name: Create {{ docker_jenkins_home }} directory
+- name: Create directory
   file:
-    path: "{{ docker_jenkins_home }}"
+    path: 
     state: directory
 
 - name: Copy files to server
   copy:
     src: files/plugins.txt
-    dest: "{{ docker_jenkins_home }}"
+    dest: 
 
 - name: Copy templates to server
   template:

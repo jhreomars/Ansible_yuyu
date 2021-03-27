@@ -4,18 +4,17 @@
 - name: Setup docker environment
   include: setup.yml
 
-- name: Build {{ docker_jenkins_image }} image
+- name: Build docker jenkins image
   docker_image:
-    path: "{{ docker_jenkins_home }}"
-    name: "{{ docker_jenkins_image }}"
+    path: 
+    name: 
     state: present
 
-- name: Create {{ docker_jenkins_container }} container
+- name: Create docker jenkins container
   docker_container:
-    name: "{{ docker_jenkins_container }}"
-    image: "{{ docker_jenkins_image }}"
+    name: 
+    image: 
     published_ports:
-      - "{{ jenkins_port }}:{{ jenkins_port }}"
       - "50000:50000"
     restart_policy: always
 
@@ -24,7 +23,7 @@
 
 - name: Wait for jenkins to come up
   uri:
-    url: "{{ jenkins_url }}"
+    url: 
   register: jenkins_url_result
   until: jenkins_url_result.status == 200
   retries: 5
