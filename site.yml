@@ -5,4 +5,4 @@
   roles:
     - { role: install_compose, tags: "compose"}
     - install_docker
-    - docker_jenkins
+#    - docker_jenkins

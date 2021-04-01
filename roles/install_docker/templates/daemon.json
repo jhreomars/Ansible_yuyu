@@ -1,3 +1,6 @@
 {
-    "registry-mirrors": ["https://ui5lsypg.mirror.aliyuncs.com"]
+    //"registry-mirrors": ["https://ui5lsypg.mirror.aliyuncs.com"]
+    "registry-mirrors": ["https://registry-1.docker.io"]
  }
+
+
